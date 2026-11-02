@@ -8,6 +8,7 @@
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
 <meta name="author" content="Sajid Alam">
 <meta name="theme-color" content="#0F2A4A">
+<link rel="manifest" href="/manifest.webmanifest">
 <link rel="canonical" href="https://www.dataentry.work/portfolio.html">
 <link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="icon" href="/favicon-48.png" type="image/png" sizes="48x48">
@@ -320,6 +321,13 @@ lb.querySelector('.lbx').onclick=close;lb.querySelector('.lbp').onclick=function
 lb.addEventListener('click',function(e){if(e.target===lb)close()});
 document.addEventListener('keydown',function(e){if(!lb.classList.contains('on'))return;if(e.key==='Escape')close();if(e.key==='ArrowLeft')show(idx-1);if(e.key==='ArrowRight')show(idx+1)});
 })();
+</script>
+<script>
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", function () {
+    navigator.serviceWorker.register("/service-worker.js").catch(function () {});
+  });
+}
 </script>
 </body>
 </html>
