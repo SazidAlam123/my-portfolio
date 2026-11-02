@@ -8,6 +8,7 @@
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
 <meta name="author" content="Sajid Alam">
 <meta name="theme-color" content="#0F2A4A">
+<link rel="manifest" href="/manifest.webmanifest">
 <link rel="canonical" href="https://www.dataentry.work/">
 <link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="icon" href="/favicon-48.png" type="image/png" sizes="48x48">
@@ -491,6 +492,13 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape'&&rz.classLis
 </script>
 <script>
 document.querySelectorAll('.card,.edu,.job,.ct').forEach(function(el){el.addEventListener('pointermove',function(e){var r=el.getBoundingClientRect();el.style.setProperty('--mx',(e.clientX-r.left)+'px');el.style.setProperty('--my',(e.clientY-r.top)+'px')})});
+</script>
+<script>
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", function () {
+    navigator.serviceWorker.register("/service-worker.js").catch(function () {});
+  });
+}
 </script>
 </body>
 </html>

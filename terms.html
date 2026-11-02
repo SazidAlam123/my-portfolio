@@ -7,6 +7,7 @@
 <meta name="description" content="Terms and conditions for using the website of Sajid Alam, a freelance B2B data specialist.">
 <meta name="robots" content="index, follow">
 <meta name="theme-color" content="#0F2A4A">
+<link rel="manifest" href="/manifest.webmanifest">
 <link rel="canonical" href="https://www.dataentry.work/terms.html">
 <link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="icon" href="/favicon-48.png" type="image/png" sizes="48x48">
@@ -54,5 +55,12 @@ footer a{color:#D5E1EC;margin:0 10px;text-decoration:none}
 <section><h2>10. Changes and contact</h2><p>I may update these terms from time to time, and the date at the top of this page will change when I do. For any question, email <a href="mailto:dataentrywork.9842@gmail.com">dataentrywork.9842@gmail.com</a>.</p></section>
 </main>
 <footer><a href="/">Home</a><a href="/#about">About Sajid Alam</a><a href="/portfolio.html">Portfolio</a><a href="/privacy.html">Privacy Policy</a><a href="https://www.fiverr.com/sajidalam565">Fiverr</a><p style="margin-top:10px">© 2026 Sajid Alam</p></footer>
+<script>
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", function () {
+    navigator.serviceWorker.register("/service-worker.js").catch(function () {});
+  });
+}
+</script>
 </body>
 </html>
