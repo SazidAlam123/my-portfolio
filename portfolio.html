@@ -13,6 +13,7 @@
 <link rel="icon" href="/favicon-48.png" type="image/png" sizes="48x48">
 <link rel="icon" href="/favicon.png" type="image/png" sizes="192x192">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.webmanifest">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Sajid Alam">
 <meta property="og:locale" content="en_US">
@@ -29,9 +30,7 @@
 <meta name="twitter:image" content="https://www.dataentry.work/preview.jpg">
 <meta name="twitter:image:alt" content="Sajid Alam, freelance B2B data specialist">
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://www.dataentry.work/#website","url":"https://www.dataentry.work/","name":"Sajid Alam","alternateName":["Sajid Alam Data Entry","Sajid Alam Freelance Data Specialist"],"inLanguage":"en","publisher":{"@id":"https://www.dataentry.work/#person"}},{"@type":"Person","@id":"https://www.dataentry.work/#person","name":"Sajid Alam","alternateName":"Sajid Alam Data Entry","jobTitle":"Freelance B2B Data Specialist","url":"https://www.dataentry.work/","image":"https://www.dataentry.work/img/sajid-alam-freelance-data-entry-expert.webp","sameAs":["https://www.fiverr.com/sajidalam565","https://www.linkedin.com/in/sajid-alam-93083b26a"]},{"@type":"CollectionPage","@id":"https://www.dataentry.work/portfolio#page","url":"https://www.dataentry.work/portfolio","name":"Portfolio: Excel data entry and typing samples","description":"Work samples by Sajid Alam, freelance B2B data specialist: Excel and Google Sheets data entry, web research and typing. Client data is blurred.","inLanguage":"en","isPartOf":{"@id":"https://www.dataentry.work/#website"},"about":{"@id":"https://www.dataentry.work/#person"},"author":{"@id":"https://www.dataentry.work/#person"},"primaryImageOfPage":{"@type":"ImageObject","url":"https://www.dataentry.work/preview.jpg","width":1200,"height":630},"dateModified":"2026-11-06"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.dataentry.work/"},{"@type":"ListItem","position":2,"name":"Portfolio","item":"https://www.dataentry.work/portfolio"}]}]}</script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/fonts.css">
 <style>
 :root{--navy:#0F2A4A;--navy-d:#0A1E36;--blue:#1B4F8A;--green:#0B8A5B;--green-d:#087048;--mint:#E6F5EE;--sky:#EAF1FB;--amber:#F5B83D;--ink:#12263A;--muted:#51606B;--line:#D5DEE8;--brown:#3B2A22;--gold:#C9A24A;--cream:#F6F1E8;--head:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif;--body:"Source Sans 3","Segoe UI",system-ui,sans-serif}
 *{box-sizing:border-box;margin:0}
@@ -186,6 +185,7 @@ section{padding:50px 0}
 .bc{display:flex;gap:8px;font-size:14px;color:#C7D6E6;margin-bottom:14px}.bc a{text-decoration:none;transition:color .2s}.bc a:hover{color:#fff;text-decoration:underline}
 </style>
 <noscript><style>.rv{opacity:1!important;transform:none!important}.rv .zoom img{clip-path:none!important}</style></noscript>
+<link rel="stylesheet" href="/css/consent.css">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -300,38 +300,9 @@ section{padding:50px 0}
 <p>© 2026 Sajid Alam. Freelance data entry and cleaning services for businesses. I do not offer jobs or hire workers.</p>
 </footer>
 
-<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Image viewer"><button class="lbx" aria-label="Close">&times;</button><button class="lbp" aria-label="Previous">&#8249;</button><img alt=""><p></p><button class="lbn" aria-label="Next">&#8250;</button></div>
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Image viewer"><button class="lbx" aria-label="Close">&times;</button><button class="lbp" aria-label="Previous">&#8249;</button><img alt="Enlarged portfolio image" width="800" height="600"><p></p><button class="lbn" aria-label="Next">&#8250;</button></div>
 
-<script>
-(function(){
-var io='IntersectionObserver' in window?new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){if(e.target.classList.contains('skills'))[].forEach.call(e.target.children,function(c,k){c.style.animationDelay=(k*70)+'ms'});e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12}):null;
-document.querySelectorAll('.rv').forEach(function(el,i){if(io){el.style.transitionDelay=(i%3)*80+'ms';io.observe(el)}else el.classList.add('in')});
-var rm=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
-var prog=document.querySelector('.prog i'),up=document.querySelector('.up'),tk=false;
-function onS(){tk=false;var d=document.documentElement,m=d.scrollHeight-innerHeight;prog.style.transform='scaleX('+(m>0?Math.min(1,scrollY/m):0)+')';up.classList.toggle('on',scrollY>700)}
-addEventListener('scroll',function(){if(!tk){tk=true;requestAnimationFrame(onS)}},{passive:true});onS();
-up.onclick=function(){scrollTo({top:0,behavior:rm?'auto':'smooth'})};
-document.querySelectorAll('.pc,.offer div').forEach(function(el){el.addEventListener('pointermove',function(e){var r=el.getBoundingClientRect();el.style.setProperty('--mx',(e.clientX-r.left)+'px');el.style.setProperty('--my',(e.clientY-r.top)+'px')})});
-var tp=document.getElementById('typed');
-if(tp&&!rm&&'IntersectionObserver' in window){var tx=tp.querySelector('.tx'),full=tx.textContent;tp.style.minHeight=tp.offsetHeight+'px';tx.textContent='';var cr=document.createElement('i');cr.className='caret';tx.appendChild(cr);
-var to=new IntersectionObserver(function(es){if(!es[0].isIntersecting)return;to.disconnect();var n=0;(function step(){n+=2;tx.firstChild===cr?0:0;tx.textContent=full.slice(0,n);tx.appendChild(cr);if(n<full.length)setTimeout(step,28);else setTimeout(function(){cr.remove()},2500)})()},{threshold:.7});to.observe(tp)}
-var lb=document.getElementById('lb'),im=lb.querySelector('img'),cap=lb.querySelector('p'),list=[],idx=0,last=null;
-var all=[].slice.call(document.querySelectorAll('.zoom'));
-function show(i){idx=(i+list.length)%list.length;var b=list[idx],s=b.querySelector('img');im.src=s.currentSrc||s.src;im.alt=s.alt;cap.textContent=b.getAttribute('data-cap')||''}
-function open(b){last=b;var g=b.getAttribute('data-g');list=all.filter(function(x){return x.getAttribute('data-g')===g});lb.classList.add('on');document.body.style.overflow='hidden';show(list.indexOf(b));lb.querySelector('.lbx').focus()}
-function close(){lb.classList.remove('on');document.body.style.overflow='';if(last)last.focus()}
-all.forEach(function(b){b.addEventListener('click',function(){open(b)})});
-lb.querySelector('.lbx').onclick=close;lb.querySelector('.lbp').onclick=function(){show(idx-1)};lb.querySelector('.lbn').onclick=function(){show(idx+1)};
-lb.addEventListener('click',function(e){if(e.target===lb)close()});
-document.addEventListener('keydown',function(e){if(!lb.classList.contains('on'))return;if(e.key==='Escape')close();if(e.key==='ArrowLeft')show(idx-1);if(e.key==='ArrowRight')show(idx+1)});
-})();
-</script>
-<script>
-document.addEventListener('click',function(e){
-  var a=e.target.closest&&e.target.closest('a[data-track]');
-  if(!a||typeof gtag!=='function')return;
-  gtag('event','click_'+a.getAttribute('data-track'),{link_url:a.href,page_path:location.pathname});
-});
-</script>
+<script src="/js/portfolio.js" defer></script><script src="/js/analytics.js" defer></script>
+<script src="/js/sw-register.js" defer></script>
 </body>
 </html>

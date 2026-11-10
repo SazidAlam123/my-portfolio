@@ -28,10 +28,9 @@
 <link rel="icon" href="/favicon-48.png" type="image/png" sizes="48x48">
 <link rel="icon" href="/favicon.png" type="image/png" sizes="192x192">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.webmanifest">
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://www.dataentry.work/#website","url":"https://www.dataentry.work/","name":"Sajid Alam","alternateName":["Sajid Alam Data Entry","Sajid Alam Freelance Data Specialist"],"inLanguage":"en","publisher":{"@id":"https://www.dataentry.work/#person"}},{"@type":"Person","@id":"https://www.dataentry.work/#person","name":"Sajid Alam","alternateName":"Sajid Alam Data Entry","jobTitle":"Freelance B2B Data Specialist","url":"https://www.dataentry.work/","image":"https://www.dataentry.work/img/sajid-alam-freelance-data-entry-expert.webp","sameAs":["https://www.fiverr.com/sajidalam565","https://www.linkedin.com/in/sajid-alam-93083b26a"]},{"@type":"WebPage","@id":"https://www.dataentry.work/terms#page","url":"https://www.dataentry.work/terms","name":"Terms & Conditions | Sajid Alam","description":"Terms and conditions for using the website of Sajid Alam, a freelance B2B data specialist.","inLanguage":"en","isPartOf":{"@id":"https://www.dataentry.work/#website"},"publisher":{"@id":"https://www.dataentry.work/#person"},"dateModified":"2026-11-06"}]}</script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/fonts.css">
 <style>
 :root{--navy:#0F2A4A;--navy-d:#0A1E36;--green:#0B8A5B;--green-d:#087048;--sky:#EAF1FB;--ink:#12263A;--muted:#51606B;--line:#D5DEE8;--head:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif;--body:"Source Sans 3","Segoe UI",system-ui,sans-serif}
 *{box-sizing:border-box;margin:0}
@@ -63,6 +62,7 @@ footer p{margin-top:10px}
 footer a{color:#D5E1EC;margin:0 12px;text-decoration:none}
 footer a:hover{text-decoration:underline}
 </style>
+<link rel="stylesheet" href="/css/consent.css">
 </head>
 <body>
 <header><div class="wrap"><a class="brand" href="/">Sajid Alam</a><nav aria-label="Main"><a href="/#services">Services</a><a href="/portfolio">Portfolio</a><a href="/#experience">Experience</a><a href="/#education">Education</a><a href="/#about">About</a><a href="/#contact">Contact</a><a data-track="fiverr" class="btn" href="https://www.fiverr.com/sajidalam565" rel="me">Hire on Fiverr</a></nav></div></header>
@@ -84,12 +84,7 @@ footer a:hover{text-decoration:underline}
 <nav aria-label="Contact"><a href="https://wa.me/919102219240" data-track="whatsapp">WhatsApp: +91 91022 19240</a><a href="mailto:dataentrywork.9842@gmail.com">Email: dataentrywork.9842@gmail.com</a></nav>
 <p>© 2026 Sajid Alam. Freelance data entry and cleaning services for businesses. I do not offer jobs or hire workers.</p>
 </footer>
-<script>
-document.addEventListener('click',function(e){
-  var a=e.target.closest&&e.target.closest('a[data-track]');
-  if(!a||typeof gtag!=='function')return;
-  gtag('event','click_'+a.getAttribute('data-track'),{link_url:a.href,page_path:location.pathname});
-});
-</script>
+<script src="/js/analytics.js" defer></script>
+<script src="/js/sw-register.js" defer></script>
 </body>
 </html>

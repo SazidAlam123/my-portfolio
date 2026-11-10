@@ -13,6 +13,7 @@
 <link rel="icon" href="/favicon-48.png" type="image/png" sizes="48x48">
 <link rel="icon" href="/favicon.png" type="image/png" sizes="192x192">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.webmanifest">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Sajid Alam">
 <meta property="og:locale" content="en_US">
@@ -29,9 +30,7 @@
 <meta name="twitter:image" content="https://www.dataentry.work/preview.jpg">
 <meta name="twitter:image:alt" content="Sajid Alam, freelance B2B data specialist">
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://www.dataentry.work/#website","url":"https://www.dataentry.work/","name":"Sajid Alam","inLanguage":"en","publisher":{"@id":"https://www.dataentry.work/#person"}},{"@type":"Person","@id":"https://www.dataentry.work/#person","name":"Sajid Alam","jobTitle":"Freelance B2B Data Specialist","url":"https://www.dataentry.work/","image":"https://www.dataentry.work/img/sajid-alam-freelance-data-entry-expert.webp","sameAs":["https://www.fiverr.com/sajidalam565","https://www.linkedin.com/in/sajid-alam-93083b26a"],"address":{"@type":"PostalAddress","addressCountry":"IN"}},{"@type":"WebPage","@id":"https://www.dataentry.work/pricing#webpage","url":"https://www.dataentry.work/pricing","name":"Data Entry & Data Cleaning Pricing | Sajid Alam","description":"Pricing for Sajid Alam’s Excel and Google Sheets data entry, PDF to Excel and data cleaning services. Gigs start from $5.","isPartOf":{"@id":"https://www.dataentry.work/#website"},"inLanguage":"en","author":{"@id":"https://www.dataentry.work/#person"},"dateModified":"2026-11-06","breadcrumb":{"@id":"https://www.dataentry.work/pricing#breadcrumb"},"mainEntity":{"@id":"https://www.dataentry.work/pricing#service"}},{"@type":"BreadcrumbList","@id":"https://www.dataentry.work/pricing#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.dataentry.work/"},{"@type":"ListItem","position":2,"name":"Pricing","item":"https://www.dataentry.work/pricing"}]},{"@type":"ProfessionalService","@id":"https://www.dataentry.work/pricing#service","name":"Sajid Alam | Data entry and data cleaning pricing","url":"https://www.dataentry.work/pricing","description":"Pricing for Sajid Alam’s Excel and Google Sheets data entry, PDF to Excel and data cleaning services. Gigs start from $5.","founder":{"@id":"https://www.dataentry.work/#person"},"serviceType":"Data entry and data cleaning","address":{"@type":"PostalAddress","addressCountry":"IN"},"sameAs":["https://www.fiverr.com/sajidalam565","https://www.linkedin.com/in/sajid-alam-93083b26a"]},{"@type":"FAQPage","@id":"https://www.dataentry.work/pricing#faq","mainEntity":[{"@type":"Question","name":"How much do your services cost?","acceptedAnswer":{"@type":"Answer","text":"Gigs start from $5. The final price depends on how much work your project needs, and it is confirmed on Fiverr before work begins."}},{"@type":"Question","name":"What affects the price?","acceptedAnswer":{"@type":"Answer","text":"The price depends on how much work your project needs. Details: The size of the file, the number of rows or pages, how messy or complex the data is, and the deadline."}},{"@type":"Question","name":"Can I get a price before I order?","acceptedAnswer":{"@type":"Answer","text":"Yes. Message me with your files and what you need. I confirm the scope, the time needed and the price before starting."}},{"@type":"Question","name":"How do I pay?","acceptedAnswer":{"@type":"Answer","text":"Orders, payment and delivery all go through Fiverr."}},{"@type":"Question","name":"Do I pay anything before the price is confirmed?","acceptedAnswer":{"@type":"Answer","text":"No. The price is confirmed on Fiverr before work begins."}}]}]}</script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/fonts.css">
 <style>
 :root{--navy:#0F2A4A;--navy-d:#0A1E36;--blue:#1B4F8A;--green:#0B8A5B;--green-d:#087048;--mint:#E6F5EE;--sky:#EAF1FB;--amber:#F5B83D;--ink:#12263A;--muted:#51606B;--line:#D5DEE8;--head:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif;--body:"Source Sans 3","Segoe UI",system-ui,sans-serif}
 *{box-sizing:border-box;margin:0}
@@ -302,6 +301,7 @@ h1 .chip{display:block;width:max-content;max-width:100%}
 .tw td:first-child{font-weight:600}
 .tnote{margin-top:14px;color:var(--muted);font-size:15px}
 </style>
+<link rel="stylesheet" href="/css/consent.css">
 </head>
 <body class="pg">
 <a class="skip" href="#main">Skip to content</a>
@@ -416,15 +416,7 @@ h1 .chip{display:block;width:max-content;max-width:100%}
 <nav aria-label="Contact"><a href="https://wa.me/919102219240" data-track="whatsapp">WhatsApp: +91 91022 19240</a><a href="mailto:dataentrywork.9842@gmail.com">Email: dataentrywork.9842@gmail.com</a></nav>
 <p>© 2026 Sajid Alam. Freelance data entry and cleaning services for businesses. I do not offer jobs or hire workers.</p>
 </footer>
-<script>
-document.querySelectorAll('.card,.edu,.job,.ct').forEach(function(el){el.addEventListener('pointermove',function(e){var r=el.getBoundingClientRect();el.style.setProperty('--mx',(e.clientX-r.left)+'px');el.style.setProperty('--my',(e.clientY-r.top)+'px')})});
-</script>
-<script>
-document.addEventListener('click',function(e){
-  var a=e.target.closest&&e.target.closest('a[data-track]');
-  if(!a||typeof gtag!=='function')return;
-  gtag('event','click_'+a.getAttribute('data-track'),{link_url:a.href,page_path:location.pathname});
-});
-</script>
+<script src="/js/pricing.js" defer></script><script src="/js/analytics.js" defer></script>
+<script src="/js/sw-register.js" defer></script>
 </body>
 </html>
