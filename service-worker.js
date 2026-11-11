@@ -4,7 +4,7 @@
    - Static assets (img/icons/js/favicons): stale-while-revalidate.
    Bump CACHE_VERSION on each deploy that changes cached files. */
 const CACHE_PREFIX = 'sajidalam-site-';
-const CACHE_VERSION = 'v4';
+const CACHE_VERSION = 'v6';
 const CACHE_NAME = CACHE_PREFIX + CACHE_VERSION;
 
 const PRECACHE = [
@@ -14,6 +14,8 @@ const PRECACHE = [
   '/pdf-to-excel',
   '/excel-data-entry',
   '/data-cleaning',
+  '/typing-services',
+  '/how-to-clean-data-in-excel',
   '/privacy',
   '/terms',
   '/manifest.webmanifest',
@@ -23,6 +25,8 @@ const PRECACHE = [
   '/js/pdf-to-excel.js',
   '/js/excel-data-entry.js',
   '/js/data-cleaning.js',
+  '/js/typing-services.js',
+  '/js/how-to-clean-data-in-excel.js',
   '/js/sw-register.js',
   '/js/analytics.js',
   '/css/consent.css',
