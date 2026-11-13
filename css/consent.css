@@ -1,0 +1,7 @@
+.ckb{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom,0px));max-width:560px;margin:0 auto;z-index:9999;background:#0F2A4A;color:#fff;border-radius:14px;padding:14px 16px;box-shadow:0 10px 40px rgba(0,0,0,.5);border:1px solid rgba(255,255,255,.35);font:15px/1.45 "Source Sans 3",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;display:flex;flex-wrap:wrap;gap:10px 14px;align-items:center}
+.ckb p{margin:0;flex:1 1 240px}
+.ckb a{color:#fff;text-decoration:underline}
+.ckb-btns{display:flex;gap:8px}
+.ckb button{min-height:44px;padding:0 18px;border-radius:10px;font:inherit;font-weight:600;cursor:pointer;border:1px solid #fff;background:transparent;color:#fff}
+.ckb button.ckb-yes{background:#fff;color:#0F2A4A}
+.ckb button:focus-visible,.ckb a:focus-visible{outline:3px solid #7ee0a1;outline-offset:2px}

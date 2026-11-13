@@ -1,0 +1,6 @@
+# Security contact for dataentry.work
+# Please report security problems with this website to the address below.
+Contact: mailto:dataentrywork.9842@gmail.com
+Expires: 2027-11-09T00:00:00.000Z
+Preferred-Languages: en, hi
+Canonical: https://www.dataentry.work/.well-known/security.txt

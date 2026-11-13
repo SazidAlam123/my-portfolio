@@ -1,19 +1,40 @@
 /* Conservative service worker for Sajid Alam's website.
    - Same-origin GET requests only; third-party requests are never touched.
    - HTML pages: network-first, falling back to cache when offline.
-   - Static assets (img/icons/favicons): stale-while-revalidate.
+   - Static assets (img/icons/js/favicons): stale-while-revalidate.
    Bump CACHE_VERSION on each deploy that changes cached files. */
 const CACHE_PREFIX = 'sajidalam-site-';
-const CACHE_VERSION = 'v1';
+const CACHE_VERSION = 'v7';
 const CACHE_NAME = CACHE_PREFIX + CACHE_VERSION;
 
 const PRECACHE = [
   '/',
-  '/index.html',
-  '/portfolio.html',
-  '/privacy.html',
-  '/terms.html',
+  '/portfolio',
+  '/pricing',
+  '/pdf-to-excel',
+  '/excel-data-entry',
+  '/data-cleaning',
+  '/typing-services',
+  '/how-to-clean-data-in-excel',
+  '/privacy',
+  '/terms',
   '/manifest.webmanifest',
+  '/js/index.js',
+  '/js/portfolio.js',
+  '/js/pricing.js',
+  '/js/pdf-to-excel.js',
+  '/js/excel-data-entry.js',
+  '/js/data-cleaning.js',
+  '/js/typing-services.js',
+  '/js/how-to-clean-data-in-excel.js',
+  '/js/sw-register.js',
+  '/js/analytics.js',
+  '/css/consent.css',
+  '/css/fonts.css',
+  '/fonts/bricolage-500.woff2',
+  '/fonts/bricolage-700.woff2',
+  '/fonts/sourcesans3-400.woff2',
+  '/fonts/sourcesans3-600.woff2',
   '/favicon.ico',
   '/favicon.png',
   '/favicon-48.png',
@@ -23,7 +44,8 @@ const PRECACHE = [
   '/icons/icon-maskable-512.png',
   '/img/sajid-alam-freelance-data-entry-expert.webp',
   '/img/peblo-logo.webp',
-  '/img/fiverr-level-2-seller-badge.webp'
+  '/img/fiverr-level-2-seller-badge.webp',
+  '/img/fiverr-level-2-badge-sm.webp'
 ];
 
 self.addEventListener('install', (event) => {
@@ -51,6 +73,9 @@ self.addEventListener('activate', (event) => {
 function isStaticAsset(url) {
   return url.pathname.startsWith('/img/') ||
          url.pathname.startsWith('/icons/') ||
+         url.pathname.startsWith('/js/') ||
+         url.pathname.startsWith('/css/') ||
+         url.pathname.startsWith('/fonts/') ||
          /^\/(favicon|apple-touch-icon)/.test(url.pathname) ||
          url.pathname === '/preview.jpg';
 }
@@ -66,14 +91,14 @@ self.addEventListener('fetch', (event) => {
   if (req.mode === 'navigate') {
     event.respondWith(
       fetch(req).then((res) => {
-        if (res && res.status === 200 && res.type === 'basic') {
+        if (res && res.status === 200 && res.type === 'basic' && !res.redirected) {
           const copy = res.clone();
           caches.open(CACHE_NAME).then((c) => c.put(req, copy)).catch(() => {});
         }
         return res;
       }).catch(() =>
         caches.match(req, { ignoreSearch: true })
-          .then((hit) => hit || caches.match('/index.html'))
+          .then((hit) => hit || caches.match('/'))
       )
     );
     return;
