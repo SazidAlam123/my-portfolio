@@ -4,7 +4,7 @@
    - Static assets (img/icons/js/favicons): stale-while-revalidate.
    Bump CACHE_VERSION on each deploy that changes cached files. */
 const CACHE_PREFIX = 'sajidalam-site-';
-const CACHE_VERSION = 'v6';
+const CACHE_VERSION = 'v7';
 const CACHE_NAME = CACHE_PREFIX + CACHE_VERSION;
 
 const PRECACHE = [
@@ -44,7 +44,8 @@ const PRECACHE = [
   '/icons/icon-maskable-512.png',
   '/img/sajid-alam-freelance-data-entry-expert.webp',
   '/img/peblo-logo.webp',
-  '/img/fiverr-level-2-seller-badge.webp'
+  '/img/fiverr-level-2-seller-badge.webp',
+  '/img/fiverr-level-2-badge-sm.webp'
 ];
 
 self.addEventListener('install', (event) => {
